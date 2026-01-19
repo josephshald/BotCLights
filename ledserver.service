@@ -1,0 +1,14 @@
+[Unit]
+Description=LED Flask Server
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/necio/led_server
+ExecStart=/home/necio/ledtest/bin/python /home/necio/led_server/server.py
+Restart=always
+RestartSec=5s
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
