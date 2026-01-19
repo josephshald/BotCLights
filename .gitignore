@@ -1,0 +1,14 @@
+#Runtime state
+led_state.json
+led_state_*.json
+
+#python
+__pycache__/
+*.pyc
+
+#Virtualenvs
+venv/
+ledtest/
+
+#Cloudflare secrets
+.cloudflared/
